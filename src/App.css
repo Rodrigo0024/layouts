@@ -22,7 +22,7 @@
 
 .header {
   grid-area: header;
-  background: #3498db;
+  background: #000000;
   color: white;
   padding: 15px;
   font-size: 1.5rem;
@@ -31,20 +31,20 @@
 
 .nav {
   grid-area: nav;
-  background: #2ecc71;
+  background: #2e60cc52;
   padding: 15px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .main {
   grid-area: main;
-  background: #ecf0f1;
+  background: #ffffff;
   padding: 15px;
 }
 
 .sidebar {
   grid-area: sidebar;
-  background: #95a5a6;
+  background: #000000;
   padding: 15px;
   color: white;
 }
@@ -89,4 +89,53 @@ html, body, #root {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 15px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+img{
+  height: 100px;
+  border-radius: 10px;
+
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-links li a:hover {
+  text-decoration: underline;
+}
+.imagem-grande {
+  height: 300px; /* ou o tamanho que quiser */
+  width: 200px;
+  object-fit: cover; /* mantém a imagem proporcional */
+}
+.imagem-grande:hover{
+    transform: scale(1.1); /* aumenta 10% ao passar o mouse */
+  cursor: pointer; /* muda o cursor para indicar interatividade */
+}
+img:hover{
+    transform: scale(1.1); /* aumenta 10% ao passar o mouse */
+  cursor: pointer; /* muda o cursor para indicar interatividade */
 }
